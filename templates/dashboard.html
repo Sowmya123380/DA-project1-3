@@ -35,19 +35,19 @@
 
 <script>
 
-const ctx = document.getElementById('customerChart');
+    const ctx = document.getElementById('customerChart');
 
-new Chart(ctx,{
-    type:'bar',
-    data:{
-        labels:['Customers','Revenue'],
-        datasets:[{
-            label:'Analytics',
-            data:[
-                {{ total_customers }},
-                {{ total_revenue }}
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Customers', 'Revenue'],
+            datasets: [{
+                label: 'Analytics',
+                data: [
+                    {{ total_customers }},
+            {{ total_revenue }}
             ]
-        }]
+    }]
     }
 });
 
